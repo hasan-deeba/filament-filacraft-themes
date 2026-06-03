@@ -9,10 +9,10 @@
         <div class="flex justify-end -mb-4">
             <div class="inline-flex items-center rounded-lg ring-1 ring-gray-200 dark:ring-gray-700 overflow-hidden text-xs font-medium">
                 <button
-                    x-on:click="setLang('tr')"
-                    :class="lang === 'tr' ? 'bg-primary-500 text-white' : 'bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'"
+                    x-on:click="setLang('ar')"
+                    :class="lang === 'ar' ? 'bg-primary-500 text-white' : 'bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'"
                     class="px-3 py-1.5 transition-colors"
-                >TR</button>
+                >AR</button>
                 <button
                     x-on:click="setLang('en')"
                     :class="lang === 'en' ? 'bg-primary-500 text-white' : 'bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'"
@@ -387,54 +387,54 @@
 
     <script>
         var filacraftTranslations = {
-            tr: {
-                themeStyle: 'Tema Stili',
-                themeStyleDesc: 'Panelin genel gorunumunu secin',
-                egeTitle: 'Ege Esintisi',
-                egeDesc: 'Yumusak & yuvarlak pill stili',
-                akdenizTitle: 'Akdeniz Ruhu',
-                akdenizDesc: 'Pastel sidebar & navbar',
-                kutupTitle: 'Kutup Işığı',
-                kutupDesc: 'Ust navigasyon & buzul tonlari',
-                gunbatimiTitle: 'Gün Batımı',
-                gunbatimiDesc: 'Sicak tonlar & yumusak kenarlar',
-                atlasTitle: 'Atlas',
-                atlasDesc: 'Katmanli yuzeyler & rafine detaylar',
-                colorPalette: 'Renk Paleti',
-                colorPaletteDesc: 'Ana rengi secin — tum panel bu renge gore sekillenecek',
-                fontPicker: 'Yazi Tipi',
-                fontPickerDesc: 'Panel genelinde kullanilacak fontu secin',
-                borderRadius: 'Kose Yuvarlaklik',
-                borderRadiusDesc: 'Bilesenlerin kose yuvarlakligi',
-                density: 'Yogunluk',
-                densityDesc: 'Icerik araligi ve bosluk miktari',
-                errorPageStyle: 'Hata Sayfasi Stili',
-                errorPageStyleDesc: '404, 403, 500 hata sayfalarinin gorunumu',
-                pageNotFound: 'Sayfa Bulunamadi',
-                themeSettings: 'Tema Ayarlari',
-                themeSettingsDesc: 'Tum ayarlari varsayilana dondur',
-                resetAll: 'Tum Ayarlari Sifirla',
-                resetConfirm: 'Tum tema ayarlarini sifirlamak istediginize emin misiniz?',
-                select: 'Sec',
-                selected: 'Secili',
-                preview: 'Goster',
-                close: 'Kapat',
+            ar: {
+                themeStyle: 'نمط المظهر',
+                themeStyleDesc: 'اختر المظهر العام للوحة التحكم',
+                egeTitle: 'نسيم',
+                egeDesc: 'نمط ناعم ودائري شبيه بالكبسولة',
+                akdenizTitle: 'روح البحر الأبيض المتوسط',
+                akdenizDesc: 'شريط جانبي وشريط علوي بألوان هادئة (باستيل)',
+                kutupTitle: 'أضواء القطب الشمالي',
+                kutupDesc: 'قائمة تنقل علوية بظلال جليدية باردة',
+                gunbatimiTitle: 'غروب الشمس',
+                gunbatimiDesc: 'نغمات دافئة وحواف ناعمة',
+                atlasTitle: 'أطلس',
+                atlasDesc: 'أسطح متعددة الطبقات وتفاصيل دقيقة',
+                colorPalette: 'لوحة الألوان',
+                colorPaletteDesc: 'اختر اللون الأساسي — سيتم تنسيق اللوحة بأكملها بناءً عليه',
+                fontPicker: 'نوع الخط',
+                fontPickerDesc: 'اختر الخط المستخدم في كافة أنحاء لوحة التحكم',
+                borderRadius: 'انحناء الحواف',
+                borderRadiusDesc: 'درجة دائرية زوايا المكونات',
+                density: 'كثافة العرض',
+                densityDesc: 'مسافة المحتوى وحجم الفراغات بين العناصر',
+                errorPageStyle: 'نمط صفحة الخطأ',
+                errorPageStyleDesc: 'مظهر صفحات الأخطاء 404، 403، و 500',
+                pageNotFound: 'الصفحة غير موجودة',
+                themeSettings: 'إعدادات المظهر',
+                themeSettingsDesc: 'إعادة تعيين كافة الإعدادات إلى الوضع الافتراضي',
+                resetAll: 'إعادة تعيين كافة الإعدادات',
+                resetConfirm: 'هل أنت متأكد من أنك تريد إعادة تعيين كافة إعدادات المظهر؟',
+                select: 'تحديد',
+                selected: 'محدد',
+                preview: 'معاينة',
+                close: 'إغلاق',
                 paletteLabels: {
-                    'default': 'Varsayilan', 'turquoise': 'Turkuaz', 'ocean': 'Okyanus', 'emerald': 'Zumrut',
-                    'violet': 'Mor', 'rose': 'Gul', 'amber': 'Amber', 'indigo': 'Indigo',
-                    'slate': 'Celik', 'cyan': 'Cyan', 'fuchsia': 'Fusya', 'red': 'Kirmizi',
-                    'lime': 'Yesil', 'sky': 'Gok'
+                    'default': 'الافتراضي', 'turquoise': 'تركوازي', 'ocean': 'محيطي', 'emerald': 'زمردي',
+                    'violet': 'بنفسجي', 'rose': 'وردي', 'amber': 'كهرماني', 'indigo': 'نيلي',
+                    'slate': 'فولاذي', 'cyan': 'سماوي داكن', 'fuchsia': 'فوشيا', 'red': 'أحمر',
+                    'lime': 'ليموني', 'sky': 'سماوي فاتح'
                 },
-                radiusLabels: { 'sharp': 'Keskin', 'small': 'Hafif', 'default': 'Normal', 'large': 'Yuvarlak' },
-                densityLabels: { 'compact': 'Sikisik', 'default': 'Normal', 'comfortable': 'Ferah' },
-                densityDescs: { 'compact': 'Daha az bosluk', 'default': 'Varsayilan aralik', 'comfortable': 'Daha fazla bosluk' },
-                errorLabels: { 'default': 'Varsayilan', 'minimal': 'Minimal', 'illustrated': 'Illustrasyonlu', 'gradient': 'Gradient' },
-                errorDescs: { 'default': 'Laravel varsayilani', 'minimal': 'Sade ve temiz', 'illustrated': 'Canli ve renkli', 'gradient': 'Modern ve etkileyici' },
+                radiusLabels: { 'sharp': 'حاد', 'small': 'خفيف', 'default': 'عادي', 'large': 'دائري' },
+                densityLabels: { 'compact': 'مدمج', 'default': 'عادي', 'comfortable': 'مريح' },
+                densityDescs: { 'compact': 'فراغات أقل', 'default': 'المسافات الافتراضية', 'comfortable': 'فراغات أكبر' },
+                errorLabels: { 'default': 'الافتراضي', 'minimal': 'بسيط', 'illustrated': 'مع رسومات', 'gradient': 'تدرج لوني' },
+                errorDescs: { 'default': 'افتراضي لارافيل', 'minimal': 'بسيط ونظيف', 'illustrated': 'حيوي وملون', 'gradient': 'حديث ومؤثر' },
             },
             en: {
                 themeStyle: 'Theme Style',
                 themeStyleDesc: 'Choose the overall look of the panel',
-                egeTitle: 'Aegean Breeze',
+                egeTitle: 'Breeze',
                 egeDesc: 'Soft & rounded pill style',
                 akdenizTitle: 'Mediterranean Soul',
                 akdenizDesc: 'Pastel sidebar & navbar',
