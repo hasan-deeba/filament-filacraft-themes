@@ -11,7 +11,7 @@ return new class extends Migration
         Schema::create('user_theme_settings', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
-            $table->json('settings')->default('[]');
+            $table->json('settings')->nullable();
             $table->timestamps();
 
             $table->unique('user_id');
